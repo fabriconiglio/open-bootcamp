@@ -1,12 +1,17 @@
 package com.ejercicioDos;
 
+import java.util.Scanner;
+
 //Para este ejercicio tendréis que crear una función que reciba un precio
 // y devuelva el precio con el IVA incluido.
 public class EjercicioDos {
 
     public static void main(String[] args) {
 
-        System.out.println("El precio con IVA es: " + getPrecio(10.0));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+        Double numero = scanner.nextDouble();
+        System.out.println("El precio con IVA es: " + getPrecio(numero));
 
 }
 
