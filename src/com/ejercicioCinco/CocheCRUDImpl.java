@@ -5,19 +5,28 @@ import java.util.List;
 public class CocheCRUDImpl implements CocheCRUD {
 
     @Override
-    public void save(Coche coche) {
-        System.out.println("Nombre del metodo: save");
+    public void save() {
 
     }
 
     @Override
-    public List<Coche> findAll() {
-        System.out.println("Nombre del metodo: findAll");
-        return null;
+    public void findAll() {
     }
 
     @Override
-    public void delete(Coche coche) {
-        System.out.println("Nombre del metodo: delete");
+    public void delete() {
+    }
+
+    String save = "save";
+    String findAll = "findAll";
+    String delete = "delete";
+
+    @Override
+    public String toString() {
+        return "CocheCRUDImpl{" +
+                "save='" + save + '\'' +
+                ", findAll='" + findAll + '\'' +
+                ", delete='" + delete + '\'' +
+                '}';
     }
 }

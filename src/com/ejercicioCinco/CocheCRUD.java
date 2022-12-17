@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface CocheCRUD {
 
-    public void save(Coche coche);
-    public List<Coche> findAll();
-    public void delete(Coche coche);
+    public void save();
+    public void findAll();
+    public void delete();
 }
